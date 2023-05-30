@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Destructing Array</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script>
+            // Destructing Array - Assigning Array Values to Variables was difficult earlier. But using Destructing Array, we can easily assign it.
+            /*
+            Before :
+            let user = ["Ajay",22];
+            name = user[0];
+            age = user[1];
+            */
+
+            // Now :
+            let user = ["Ajay",22];
+            let [name,age] = user;
+
+            document.write("Name : "+name+"<Br>");
+            document.write("Age : "+age);
+        </script>
+    </body>
+</html>

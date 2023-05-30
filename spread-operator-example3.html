@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Spread Operator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script>
+            // Spread Operator Example - Merge Two Objects
+            var obj1 = {
+                name : "Ajay"
+            };
+
+            var obj2 = {
+                age : 22
+            };
+
+            var obj3 = {...obj1, ...obj2}; // Spread Operator
+
+            document.write("Name : "+obj3.name+"<br>");
+            document.write("Age : "+obj3.age);
+        </script>
+    </body>
+</html>

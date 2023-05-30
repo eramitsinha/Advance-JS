@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Arrow Functions</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script>
+            // Arrow Functions - To make function short
+            /*
+            Before :
+            function abc()
+            {
+                document.write("Hello");
+            }
+            abc()
+            */
+            // Now
+           let abc = () => document.write("Hello"); // One Line
+           abc();
+
+           // Multi Line
+           let abc = () => {
+            a = 10;
+            b = 20;
+            alert(a+b);
+           }
+           abc();
+        </script>
+    </body>
+</html>

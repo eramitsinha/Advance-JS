@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rest Operator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script>
+            // Rest Operator Example
+            function sum(name,...args)
+            {
+                s = 0;
+                for(let i in args)
+                {
+                    s = s + args[i];
+                }
+                x = `Sum = ${s}`;
+                document.write(x+"<br>");
+                document.write(name)
+            }
+            sum("Abhay",10,20,30,40);
+        </script>
+    </body>
+</html>
