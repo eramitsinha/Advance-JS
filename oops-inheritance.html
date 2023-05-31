@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>OOPS Inheritance</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script>
+            // Inhertiance means to Inherit Properties of Parent Class in Child Class.
+            // We use "extends" keyword.
+            class Parent
+            {
+                abc()
+                {
+                    document.write("Hello");
+                }
+            }
+            class Son extends Parent
+            {
+                xyz()
+                {
+                    document.write("hey");
+                }
+            }
+           obj = new Son();
+           obj.xyz();
+           obj.abc();
+        </script>
+    </body>
+</html>
