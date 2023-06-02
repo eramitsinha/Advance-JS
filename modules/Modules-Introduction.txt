@@ -1,0 +1,2 @@
+Modules is used to access variables, functions and class of one file into another file.
+We use "export" and "import" keywords for using modules.
