@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ajax</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Ajax Example</h1>
+
+        <button onclick="abc()">Show Message</button>
+
+        <div id="result"></div>
+
+        <script>
+            function abc()
+            {
+                // 1) Create an Object of XMLHttpRequest
+                obj = new XMLHttpRequest();
+
+                // 4) Keep tracking the request state and display response if status code is "200".
+                obj.onreadystatechange = function(){
+                    if(this.readyState==4 && this.status==200)
+                    {
+                        // 5) Fetch and display the response.
+                        document.getElementById("result").innerHTML = this.responseText;
+                    }
+                };
+                
+                // 2) Establish connection
+                obj.open("GET","server.txt",true);
+
+                // 3) Send the request
+                obj.send();
+            }
+        </script>
+    </body>
+</html>
