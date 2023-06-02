@@ -22,7 +22,8 @@ open() and send() functions are used together.
 
 XMLHttpRequest Built-in Properties :
 1) onreadystatechange :- It keeps tracking the state of response.
-2) readystate :- It defines the current state of the request. It includes five steps:
+
+2) readyState :- It defines the current state of the request. It includes five steps:
 0 : request not initialized
 1 : server connection established
 2 : request received
