@@ -40,6 +40,7 @@ XMLHttpRequest Built-in Properties :
 
 STEPS TO USE AJAX IN JAVASCRIPT :
 1) Create an Object of XMLHttpRequest.
-2) Establish connection and send request using open() and send() functions.
-3) Keep tracking the request state and display response if status code is "200".
-4) Fetch and display the response.
+2) Establish connection using open()
+3) Send the request using send()
+4) Keep tracking the request state and display response if status code is "200".
+5) Fetch and display the response.
