@@ -1,0 +1,45 @@
+What is Ajax?
+- Ajax stands for Asynchronous Javascript and XML.
+- It is a technology used to perform task without page refresh.
+- Ajax is used to send request to the web server and get response.
+- For using Ajax, we need 2 files, first file will send request and second file is web server file which will return response.
+
+XMLHttpRequest :
+- It is an object that is used to send request to the web server.
+- Syntax : variable = new XMLHttpRequest();
+
+XMLHttpRequest Built-in Functions :
+1) open(method,url,async) :- 
+This function is used to open the connection with the web server. It accepts three parameters :
+(i) method - GET/POST
+(ii) URL - web server file name
+(iii) async - True / False (True is recommended)
+
+2) send() :-
+This function is used to send request to the web server.
+
+open() and send() functions are used together.
+
+XMLHttpRequest Built-in Properties :
+1) onreadystatechange :- It keeps tracking the state of response.
+2) readystate :- It defines the current state of the request. It includes five steps:
+0 : request not initialized
+1 : server connection established
+2 : request received
+3 : processing request
+4 : response ready
+
+3) status :- It returns response status. Following are status code :
+200 - OK
+403 - FORBIDDEN
+404 - NOT FOUND
+
+4) responseText :- It will return response in form of string.
+
+5) responseXML :- It will return response in form of XML.
+
+STEPS TO USE AJAX IN JAVASCRIPT :
+1) Create an Object of XMLHttpRequest.
+2) Establish connection and send request using open() and send() functions.
+3) Keep tracking the request state and display response if status code is "200".
+4) Fetch and display the response.
