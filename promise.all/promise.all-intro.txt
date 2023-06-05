@@ -1,0 +1,8 @@
+If we have multiple promises, then we use Promise.all()
+
+Promise.all() has 2 Stages :
+1) resolve()
+2) reject() 
+
+If all Promises are resolved, resolve() further calls then() function.
+If any Promise is rejected, reject() further calls reject() function.
