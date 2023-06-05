@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Promise - Example 5</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script>
+            // Promise Example 5 - Using Method Chaining
+
+            /*
+                We can use then() and catch() in one line during
+                function call.
+            */
+            
+            function prom(x)
+            {
+                return new Promise(function(resolve,reject){
+                    console.log("Please Wait..");
+                    setTimeout(()=>{
+                        if(x)
+                        {
+                            resolve("Success");
+                        }
+                        else
+                        {
+                            reject("Failed");
+                        }
+                    },2000)
+                });
+            }
+            
+            function onFullfilment(result)
+            {
+                console.log(result);
+            }
+
+            function onRejection(error)
+            {
+                console.log(error);
+            }
+
+            /*
+            Before :
+            prom(true).then(onFullfilment); // Success
+            prom(false).catch(onRejection); // Failed
+            */
+
+            prom(true).then(onFullfilment).catch(onRejection); 
+            // Success
+        </script>
+    </body>
+</html>

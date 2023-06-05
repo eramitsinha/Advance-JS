@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Promise - Example 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script>
+            // Promise - Example 1
+        
+          let x = true;
+
+          let pr = new Promise(function(resolve,reject){
+            if(x)
+            {
+                resolve("Success");
+            }
+            else
+            {
+                reject("Failed");
+            }
+          });
+
+          console.log(pr); // Success
+        </script>
+    </body>
+</html>

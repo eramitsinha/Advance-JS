@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Promise - Example 7</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            // Promise Example 7 - Fetch Data from API
+
+            /*
+                Using JQuery Ajax.
+
+                $.get(URL, date) : Ajax function to fetch data.
+                
+                fail() : Call back function which is called if something wents wrong while fetch data.
+
+                jsonplaceholder.typicode.com : Website for API Testing
+            */
+            
+            function prom()
+            {
+                return new Promise(function(resolve,reject){
+                    $.get("https://jsonplaceholder.typicode.com/posts",function(data){
+                        resolve(data);
+                    }).fail(error => {
+                        reject("Failed to fetch data");
+                    });
+                });
+            }
+            
+            function onFullfilment(result)
+            {
+                console.log(result);
+            }
+
+            function onRejection(error)
+            {
+                console.log(error);
+            }
+
+            prom().then(onFullfilment).catch(onRejection); 
+            
+        </script>
+    </body>
+</html>
