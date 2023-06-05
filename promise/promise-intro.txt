@@ -1,0 +1,16 @@
+Promise is a JS Object which is used to handle asynchronous operations in JavaScript.
+
+For Example, Mohan Promises Sohan to meet on sunday. So, Promise has 3 Stages :
+1) Pending
+2) Resolved : If Mohan meets Sohan on sunday.
+3) Rejected : If Mohan does not meet Sohan on sunday.
+
+If promise is Resolved, resolve() function is called which further calls then() function.
+If promise is Rejected, reject() function is called which further calls catch() function.
+
+Note : then() and catch() are callback functions.
+
+Steps :
+1) Create Promise Object
+2) If promise is resolved, call resolve() function & futher call then() function.
+3) If promise is rejected, call reject() function & further call catch() function.
