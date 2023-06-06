@@ -1,0 +1,1 @@
+Async is a function which returns a promise.
