@@ -1,0 +1,24 @@
+fetch()
+==========
+- It was introduced in ES6.
+
+- It is an alternate of Ajax.
+
+- Less Code 
+
+- Fast
+
+Syntax :
+===========
+fetch(URL).then(function(response){
+    return response.data; 
+}).then(function(result){
+    console.log(result);
+}).catch(function(error){
+    console.log(error)
+});
+
+fetch() returns a promise and the response which we get also returns
+a promise. catch() is called, if promise is rejected (some server issue).
+
+response.data will be either text() or json().
