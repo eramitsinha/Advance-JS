@@ -1,0 +1,13 @@
+<script>
+
+    // Read Data from readme.txt file using fetch()
+
+    fetch("readme.txt").then(function(response){
+        return response.text()
+    }).then(function(result){
+        document.write(result);
+    }).catch(function(error){
+        console.log(error);
+    });
+
+</script>

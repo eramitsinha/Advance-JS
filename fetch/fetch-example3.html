@@ -1,0 +1,18 @@
+<script>
+
+    // Read JSON Data & Display Specific Data from API.
+
+    fetch("https://jsonplaceholder.typicode.com/users").then(function(response){
+        return response.json()
+    }).then(function(result){
+        for(var x in result)
+        {
+            document.write("Name : "+result[x].name+ " | ");
+            document.write("Email : "+result[x].email);
+            document.write("<br>");
+        }
+    }).catch(function(error){
+        console.log(error);
+    });
+
+</script>
