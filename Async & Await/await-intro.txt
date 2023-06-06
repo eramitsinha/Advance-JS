@@ -1,0 +1,3 @@
+Await is used inside async function.
+It is used to wait the current process & meanwhile run other code.
+In the code where we use "await", the code after it will not run & wait until other process gets completed
