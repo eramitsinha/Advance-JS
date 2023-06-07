@@ -1,0 +1,20 @@
+<script>
+// strict mode 
+
+/* Sometimes a JS code may have syntax error but browser does not show error, but in future, it creates issues. For this we use "strict mode".
+
+Before :
+a = 10; // this line has a syntax error, but browser ignores it. We have not mentioned declaration type (var, let or const)
+alert(a); // 10 
+
+Now :
+*/
+
+"use strict";
+a = 10;
+console.log(a); // Error 
+
+// To Resolve above error, we should always mention declaration type before variable name.
+let b = 20; 
+console.log(b); // 20
+</script>
