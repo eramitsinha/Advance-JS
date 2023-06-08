@@ -1,0 +1,16 @@
+<script>
+/*
+Using generator, we can manually display or skip statements inside a function. Before, it was not possible, because when we call any function , all statements were printed. 
+*/
+function *test()
+{
+    yield "A";
+    yield "B";
+    yield "C";
+}
+
+let g = test();
+console.log(g.next().value); // A
+g.next();
+console.log(g.next().value); // C
+</script>
