@@ -1,0 +1,14 @@
+<script>
+    /* 
+    iterator is used for traversing an array. We can manually display and skip any position value in an array. It means we have full control of array values in Iterator which is not possible using for() loop before.
+    */
+
+    var a = [10,20,30];
+
+    var i = a[Symbol.iterator]();
+
+    console.log(i.next().value);
+    i.next();
+    console.log(i.next().value);
+
+</script>
